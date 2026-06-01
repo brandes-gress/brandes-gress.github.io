@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {
+      font-family: 'TT Norms Pro';
+      src: url('../assets/TT-Norms-Wrike/TT Norms Pro Regular.otf') format('opentype');
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: 'TT Norms Pro';
+      src: url('../assets/TT-Norms-Wrike/TT Norms Pro DemiBold.otf') format('opentype');
+      font-weight: 600;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+</head>
+<body>
+
+<div style="width:800px;height:580px;background:#f2f5fa;display:flex;flex-direction:column;font-family:'TT Norms Pro',system-ui,-apple-system,sans-serif;">
+
+  <!-- Header -->
+  <div style="padding:35px 35px 16px;display:flex;justify-content:space-between;align-items:flex-start;flex-shrink:0;">
+    <div style="margin:0;font-size:24px;line-height:30px;font-weight:600;color:#162136;font-feature-settings:'salt' 1,'liga' 0;">Agentic AI cycle</div>
+    <img src="../assets/wrike.logo.svg" style="height:20px;width:100px;flex-shrink:0;align-self:center;margin-right:5px;">
+  </div>
+
+  <!-- Ring diagram — CX=400 CY=248 RO=165 RI=95 RMID=130 RLABEL=208 -->
+  <!-- segPath formula matches five_step_loop_2.html:                   -->
+  <!--   bodyEnd=a2−7°  tipAngle=a2+3°  ARROW_EXT=14px                  -->
+  <!--   M(RI,a1) L(RO,a1) A_RO_to_bodyEnd L_outerWing L_tip L_innerWing L(RI,bodyEnd) A_RI_back Z -->
+  <svg width="800" height="496" viewBox="0 0 800 496">
+
+    <!-- ── SEGMENTS — white fill, #dce1eb stroke ──────────────────────── -->
+
+    <!-- Seg 1: a1=2° a2=70° bodyEnd=63° tipAngle=73° -->
+    <path d="
+      M 403.3,153.1
+      L 405.8,83.1
+      A 165,165 0 0,1 547.0,173.1
+      L 559.5,166.7
+      L 524.3,210.0
+      L 472.2,211.2
+      L 484.7,204.9
+      A 95,95 0 0,0 403.3,153.1
+      Z" fill="#ffffff" stroke="#dce1eb" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Seg 2: a1=74° a2=142° bodyEnd=135° tipAngle=145° -->
+    <path d="
+      M 491.3,221.8
+      L 558.6,202.5
+      A 165,165 0 0,1 516.7,364.7
+      L 526.6,374.6
+      L 474.6,354.5
+      L 457.3,305.3
+      L 467.2,315.2
+      A 95,95 0 0,0 491.3,221.8
+      Z" fill="#ffffff" stroke="#dce1eb" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Seg 3: a1=146° a2=214° bodyEnd=207° tipAngle=217° -->
+    <path d="
+      M 453.1,326.8
+      L 492.3,384.8
+      A 165,165 0 0,1 325.1,395.0
+      L 318.7,407.5
+      L 321.8,351.8
+      L 363.2,320.2
+      L 356.9,332.7
+      A 95,95 0 0,0 453.1,326.8
+      Z" fill="#ffffff" stroke="#dce1eb" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Seg 4: a1=218° a2=286° bodyEnd=279° tipAngle=289° -->
+    <path d="
+      M 341.5,322.9
+      L 298.4,378.0
+      A 165,165 0 0,1 237.0,222.2
+      L 223.2,220.0
+      L 277.1,205.7
+      L 320.0,235.3
+      L 306.2,233.1
+      A 95,95 0 0,0 341.5,322.9
+      Z" fill="#ffffff" stroke="#dce1eb" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Seg 5: a1=290° a2=358° bodyEnd=351° tipAngle=1° -->
+    <path d="
+      M 310.7,215.5
+      L 244.9,191.6
+      A 165,165 0 0,1 374.2,85.0
+      L 372.0,71.2
+      L 402.3,118.0
+      L 387.3,168.0
+      L 385.1,154.2
+      A 95,95 0 0,0 310.7,215.5
+      Z" fill="#ffffff" stroke="#dce1eb" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- ── ICONS — color versions, no modification ───────────────────── -->
+    <!-- 44×44 display (scale 0.6875 of 64×64). translate(cx−22, cy−22) -->
+
+    <!-- Icon 1: icon-evo--visualisation · center (476.4, 142.8) -->
+    <g transform="translate(454.4,120.8) scale(0.6875)" fill="none">
+      <path d="M32 44C38.6274 44 44 38.6274 44 32C44 25.3726 38.6274 20 32 20C25.3726 20 20 25.3726 20 32C20 38.6274 25.3726 44 32 44Z" fill="#00E05C" stroke="#00E05C" stroke-width="3" stroke-miterlimit="10"/>
+      <path d="M32 37C34.7614 37 37 34.7614 37 32C37 29.2386 34.7614 27 32 27C29.2386 27 27 29.2386 27 32C27 34.7614 29.2386 37 32 37Z" fill="#162136" stroke="#162136" stroke-width="3" stroke-miterlimit="10"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M58.2781 30.2239C58.7458 31.3614 58.7458 32.6386 58.2781 33.7761C54.3887 43.2364 44.0565 50 31.9219 50C19.7872 50 9.45499 43.2364 5.56559 33.7761C5.09793 32.6386 5.09793 31.3614 5.56559 30.2239C9.45499 20.7636 19.7872 14 31.9219 14C44.0565 14 54.3887 20.7636 58.2781 30.2239Z" stroke="#162136" stroke-width="3" stroke-miterlimit="10" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Icon 2: icon-evo--layers · center (523.6, 288.2) -->
+    <g transform="translate(501.6,266.2) scale(0.6875)" fill="none">
+      <path d="M19.9999 39.0001L12.2501 43.9323C10.3185 45.0993 10.3185 47.9008 12.2501 49.0678L28.8973 59.1255C30.8052 60.2782 33.1948 60.2782 35.1027 59.1255L51.7499 49.0678C53.6815 47.9008 53.6815 45.0993 51.7499 43.9323L43.9999 39.0001" stroke="#162136" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M28.8973 5.87452C30.8052 4.72184 33.1948 4.72184 35.1027 5.87452L51.7499 15.9322C53.6815 17.0992 53.6815 19.9008 51.7499 21.0677L35.1027 31.1254C33.1948 32.2781 30.8052 32.2781 28.8973 31.1254L12.2501 21.0677C10.3185 19.9007 10.3185 17.0992 12.2501 15.9322L28.8973 5.87452Z" fill="#00E05C" stroke="#00E05C" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M28.8973 18.8745C30.8052 17.7218 33.1948 17.7218 35.1027 18.8745L51.7499 28.9322C53.6815 30.0992 53.6815 32.9007 51.7499 34.0677L35.1027 44.1254C33.1948 45.2781 30.8052 45.2781 28.8973 44.1254L12.2501 34.0677C10.3185 32.9007 10.3185 30.0992 12.2501 28.9322L28.8973 18.8745Z" stroke="#162136" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Icon 3: icon-evo--gantt · center (400, 378) -->
+    <g transform="translate(378,356) scale(0.6875)" fill="none">
+      <path d="M4 49C4 52.3137 6.68629 55 10 55H54C57.3137 55 60 52.3137 60 49V15C60 11.6863 57.3137 9 54 9H10C6.68629 9 4 11.6863 4 15V49Z" stroke="#162136" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M34 28V24C34 22.8954 33.1046 22 32 22H22" stroke="#162136" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M50 44V36C50 34.8954 49.1046 34 48 34H40" stroke="#162136" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 18C10 16.8954 10.8954 16 12 16H20C21.1046 16 22 16.8954 22 18V26C22 27.1046 21.1046 28 20 28H12C10.8954 28 10 27.1046 10 26V18Z" fill="#00E05C" stroke="#00E05C" stroke-width="3"/>
+      <path d="M28 30C28 28.8954 28.8954 28 30 28H38C39.1046 28 40 28.8954 40 30V38C40 39.1046 39.1046 40 38 40H30C28.8954 40 28 39.1046 28 38V30Z" fill="#00E05C" stroke="#00E05C" stroke-width="3"/>
+      <path d="M50 41L53 44L50 47L47 44L50 41Z" fill="#162136" stroke="#162136" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Icon 4: icon-evo--boost-rocket · center (276.4, 288.2) -->
+    <g transform="translate(254.4,266.2) scale(0.6875)" fill="none">
+      <path d="M17.799 31.8284C19.3611 30.2663 21.8938 30.2663 23.4559 31.8284L31.9411 40.3137C33.5032 41.8758 33.5032 44.4085 31.9411 45.9706L21.74 56.1717C21.0838 56.8279 20.2198 57.2355 19.2961 57.3247L9.90378 58.2318C7.39915 58.4737 5.29592 56.3704 5.5378 53.8658L6.44485 44.4735C6.53406 43.5497 6.94168 42.6858 7.5979 42.0295L17.799 31.8284Z" fill="#00E05C"/>
+      <path d="M49.2426 23.2426C51.5858 20.8995 51.5858 17.1005 49.2426 14.7574C46.8995 12.4142 43.1005 12.4142 40.7574 14.7574C38.4142 17.1005 38.4142 20.8995 40.7574 23.2426C43.1005 25.5858 46.8995 25.5858 49.2426 23.2426Z" fill="#162136"/>
+      <path d="M26.514 17.0291C10.5713 14.572 3 24.7719 3 24.7719L39.2281 61C39.2281 61 49.428 53.4286 46.9708 37.486" stroke="#162136" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10.8856 32.6575L37.4852 6.17217C38.9138 4.74361 40.8566 3.9722 42.9137 4.00077L51.9707 4.17219C56.2564 4.25791 59.7992 7.77214 59.8564 12.0578L60.0278 21.1148C60.0563 23.1719 59.2849 25.1148 57.8564 26.5433L31.371 53.1144" stroke="#162136" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Icon 5: icon-evo--education · center (323.6, 142.8) -->
+    <g transform="translate(301.6,120.8) scale(0.6875)" fill="none">
+      <path d="M15 27C15 23.6863 17.6863 21 21 21H43C46.3137 21 49 23.6863 49 27V45C49 51.6274 43.6274 57 37 57H27C20.3726 57 15 51.6274 15 45V27Z" fill="#00E05C" stroke="#00E05C" stroke-width="3"/>
+      <path d="M5 43C7.20465 43 9 41.214 9 39C9 36.786 7.21395 35 5 35C2.78605 35 1 36.786 1 39C1 41.214 2.78605 43 5 43Z" fill="#162136"/>
+      <path d="M5 25V39" stroke="#162136" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M27.9018 5.12149C30.4218 3.62617 33.5782 3.62617 36.0982 5.12149L58.0866 18.169C60.6378 19.6828 60.6378 23.3172 58.0866 24.831L36.0982 37.8785C33.5782 39.3738 30.4218 39.3738 27.9018 37.8785L5.91344 24.831C3.36218 23.3172 3.36219 19.6828 5.91344 18.169L27.9018 5.12149Z" stroke="#162136" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+
+    <!-- ── LABELS — all #162136, RLABEL=208 ──────────────────────────── -->
+
+    <!-- Seg 1 "Perception" · mid=36° · right side -->
+    <text x="528.3" y="79.7"
+      font-family="'TT Norms Pro', system-ui, sans-serif"
+      font-size="20" font-weight="600" fill="#162136"
+      text-anchor="start" font-feature-settings="'salt' 1, 'liga' 0">Perception</text>
+
+    <!-- Seg 2 "Knowledge / Representation" · mid=108° · right side -->
+    <text font-family="'TT Norms Pro', system-ui, sans-serif"
+      font-size="20" font-weight="600" fill="#162136"
+      text-anchor="start" font-feature-settings="'salt' 1, 'liga' 0">
+      <tspan x="603.8" y="300.3">Knowledge</tspan>
+      <tspan x="603.8" dy="24">Representation</tspan>
+    </text>
+
+    <!-- Seg 3 "Planning" · mid=180° · bottom -->
+    <text x="400" y="456"
+      font-family="'TT Norms Pro', system-ui, sans-serif"
+      font-size="20" font-weight="600" fill="#162136"
+      text-anchor="middle" font-feature-settings="'salt' 1, 'liga' 0">Planning</text>
+
+    <!-- Seg 4 "Autonomous / Action" · mid=252° · left side -->
+    <text font-family="'TT Norms Pro', system-ui, sans-serif"
+      font-size="20" font-weight="600" fill="#162136"
+      text-anchor="end" font-feature-settings="'salt' 1, 'liga' 0">
+      <tspan x="196.2" y="300.3">Autonomous</tspan>
+      <tspan x="196.2" dy="24">Action</tspan>
+    </text>
+
+    <!-- Seg 5 "Learning" · mid=324° · left side -->
+    <text x="271.7" y="79.7"
+      font-family="'TT Norms Pro', system-ui, sans-serif"
+      font-size="20" font-weight="600" fill="#162136"
+      text-anchor="end" font-feature-settings="'salt' 1, 'liga' 0">Learning</text>
+
+  </svg>
+</div>
+
+</body>
+</html>

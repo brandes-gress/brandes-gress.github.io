@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {
+      font-family: 'TT Norms Pro';
+      src: url('../assets/TT-Norms-Wrike/TT Norms Pro Regular.otf') format('opentype');
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: 'TT Norms Pro';
+      src: url('../assets/TT-Norms-Wrike/TT Norms Pro DemiBold.otf') format('opentype');
+      font-weight: 600;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 800px;
+      height: 420px;
+      background: #f2f5fa;
+      font-family: 'TT Norms Pro', system-ui, -apple-system, sans-serif;
+      font-feature-settings: 'salt' 1, 'liga' 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: flex;
+      flex-direction: column;
+      padding: 35px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 48px;
+      flex-shrink: 0;
+    }
+
+    .title {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 600;
+      color: #162136;
+    }
+
+    .logo {
+      height: 20px;
+      width: 100px;
+      flex-shrink: 0;
+      align-self: center;
+      margin-right: 5px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+
+    .card {
+      flex: 1;
+      height: 260px;
+      background: #ffffff;
+      border: 2px solid #dce1eb;
+      border-radius: 20px;
+      padding: 24px 20px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card svg {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      margin-bottom: 14px;
+    }
+
+    .card-heading {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+      color: #162136;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .card-copy {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #2b3a57;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <span class="title">Kanban vs. Scrum vs. Waterfall</span>
+    <img class="logo" src="../assets/wrike.logo.svg" alt="Wrike">
+  </div>
+
+  <div class="cards">
+
+    <!-- Kanban -->
+    <div class="card">
+      <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 11H44C47.3137 11 50 13.6863 50 17V23C50 26.3137 47.3137 29 44 29H16C12.6863 29 10 31.6863 10 35V43C10 46.3137 12.6863 49 16 49H36" stroke="#162136" stroke-width="3" stroke-linecap="round"/>
+        <path d="M40 43C40 40.7909 41.7909 39 44 39H56C58.2091 39 60 40.7909 60 43V55C60 57.2091 58.2091 59 56 59H44C41.7909 59 40 57.2091 40 55V43Z" fill="#00E05C" stroke="#00E05C" stroke-width="3"/>
+        <path d="M4 8C4 6.89543 4.89543 6 6 6H12C13.1046 6 14 6.89543 14 8V14C14 15.1046 13.1046 16 12 16H6C4.89543 16 4 15.1046 4 14V8Z" fill="#162136" stroke="#162136" stroke-width="3"/>
+        <path d="M25 26C25 24.8954 25.8954 24 27 24H33C34.1046 24 35 24.8954 35 26V32C35 33.1046 34.1046 34 33 34H27C25.8954 34 25 33.1046 25 32V26Z" fill="#162136" stroke="#162136" stroke-width="3"/>
+        <path d="M45 47.99L49 52L56 45" stroke="#162136" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M30 55L36 49L30 43" stroke="#162136" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="card-heading">Kanban</span>
+      <p class="card-copy">Visualizes work as a continuous flow, limits what's in progress at any time, and lets teams pull new tasks only when there's capacity to handle them.</p>
+    </div>
+
+    <!-- Scrum -->
+    <div class="card">
+      <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 54C44.1503 54 54 44.1503 54 32C54 19.8497 44.1503 10 32 10C19.8497 10 10 19.8497 10 32C10 44.1503 19.8497 54 32 54Z" stroke="#162136" stroke-width="3" stroke-miterlimit="10"/>
+        <path d="M33 5L28 10L33 15" stroke="#162136" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M53 49L58 54L53 59" stroke="#162136" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 54H58" stroke="#162136" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+        <path d="M32 44C38.6274 44 44 38.6274 44 32C44 25.3726 38.6274 20 32 20C25.3726 20 20 25.3726 20 32C20 38.6274 25.3726 44 32 44Z" fill="#00E05C" stroke="#00E05C" stroke-width="3"/>
+        <path d="M27 31L31 35L38 28" stroke="#162136" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="card-heading">Scrum</span>
+      <p class="card-copy">Breaks work into fixed sprints with defined goals, daily check-ins, and structured reviews so teams ship in predictable cycles.</p>
+    </div>
+
+    <!-- Waterfall -->
+    <div class="card">
+      <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 49C4 52.3137 6.68629 55 10 55H54C57.3137 55 60 52.3137 60 49V15C60 11.6863 57.3137 9 54 9H10C6.68629 9 4 11.6863 4 15V49Z" stroke="#162136" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M34 28V24C34 22.8954 33.1046 22 32 22H22" stroke="#162136" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M50 44V36C50 34.8954 49.1046 34 48 34H40" stroke="#162136" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 18C10 16.8954 10.8954 16 12 16H20C21.1046 16 22 16.8954 22 18V26C22 27.1046 21.1046 28 20 28H12C10.8954 28 10 27.1046 10 26V18Z" fill="#00E05C" stroke="#00E05C" stroke-width="3"/>
+        <path d="M28 30C28 28.8954 28.8954 28 30 28H38C39.1046 28 40 28.8954 40 30V38C40 39.1046 39.1046 40 38 40H30C28.8954 40 28 39.1046 28 38V30Z" fill="#00E05C" stroke="#00E05C" stroke-width="3"/>
+        <path d="M50 41L53 44L50 47L47 44L50 41Z" fill="#162136" stroke="#162136" stroke-width="3" stroke-linejoin="round"/>
+      </svg>
+      <span class="card-heading">Waterfall</span>
+      <p class="card-copy">Moves through each phase in sequence, from requirements to design to build to test to launch, with a clear handoff between every stage.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

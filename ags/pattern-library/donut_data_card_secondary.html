@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {
+      font-family: 'TT Norms Pro';
+      src: url('../assets/TT-Norms-Wrike/TT Norms Pro Regular.otf') format('opentype');
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: 'TT Norms Pro';
+      src: url('../assets/TT-Norms-Wrike/TT Norms Pro DemiBold.otf') format('opentype');
+      font-weight: 600;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 800px;
+      height: 390px;
+      background: #f2f5fa;
+      font-family: 'TT Norms Pro', system-ui, -apple-system, sans-serif;
+      font-feature-settings: 'salt' 1, 'liga' 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: flex;
+      flex-direction: column;
+      padding: 35px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 24px;
+      flex-shrink: 0;
+    }
+
+    .title {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 600;
+      color: #162136;
+    }
+
+    .logo {
+      height: 20px;
+      width: 100px;
+      flex-shrink: 0;
+      align-self: center;
+      margin-right: 5px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 14px;
+      flex: 1;
+    }
+
+    .stat-card {
+      flex: 1;
+      background: #ffffff;
+      border: 2px solid #dce1eb;
+      border-radius: 16px;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .arc {
+      flex-shrink: 0;
+    }
+
+    .stat-copy {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #2b3a57;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <span class="title">Why most content doesn't perform</span>
+    <img class="logo" src="../assets/wrike.logo.svg" alt="Wrike">
+  </div>
+
+  <div class="cards">
+
+    <!-- 70% — purple -->
+    <div class="stat-card">
+      <svg class="arc" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="46" stroke="#dce1eb" stroke-width="9"/>
+        <circle cx="60" cy="60" r="46" stroke="#9B87FF" stroke-width="9" stroke-linecap="round"
+          stroke-dasharray="202.3 289.0" transform="rotate(-90 60 60)"/>
+        <text x="60" y="60" text-anchor="middle" dy="0.35em"
+          font-family="'TT Norms Pro', system-ui, sans-serif"
+          font-size="27" font-weight="600" fill="#162136"
+          font-feature-settings="'salt' 1, 'liga' 0">70%</text>
+      </svg>
+      <p class="stat-copy">of B2B content goes unused because it's not relevant to the audience it was made for</p>
+    </div>
+
+    <!-- 60% — mint -->
+    <div class="stat-card">
+      <svg class="arc" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="46" stroke="#dce1eb" stroke-width="9"/>
+        <circle cx="60" cy="60" r="46" stroke="#3CD6C2" stroke-width="9" stroke-linecap="round"
+          stroke-dasharray="173.4 289.0" transform="rotate(-90 60 60)"/>
+        <text x="60" y="60" text-anchor="middle" dy="0.35em"
+          font-family="'TT Norms Pro', system-ui, sans-serif"
+          font-size="27" font-weight="600" fill="#162136"
+          font-feature-settings="'salt' 1, 'liga' 0">60%</text>
+      </svg>
+      <p class="stat-copy">of companies publish content without a documented strategy to guide it</p>
+    </div>
+
+    <!-- 45% — yellow -->
+    <div class="stat-card">
+      <svg class="arc" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="46" stroke="#dce1eb" stroke-width="9"/>
+        <circle cx="60" cy="60" r="46" stroke="#F0B429" stroke-width="9" stroke-linecap="round"
+          stroke-dasharray="130.1 289.0" transform="rotate(-90 60 60)"/>
+        <text x="60" y="60" text-anchor="middle" dy="0.35em"
+          font-family="'TT Norms Pro', system-ui, sans-serif"
+          font-size="27" font-weight="600" fill="#162136"
+          font-feature-settings="'salt' 1, 'liga' 0">45%</text>
+      </svg>
+      <p class="stat-copy">of marketers say they can't measure whether their content is actually driving results</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
